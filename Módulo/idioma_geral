@@ -9,7 +9,7 @@ done < $_dr
 unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
-txt[0]="ADM - Android Mexico"
+txt[0]="•°•°•ADM - Android Mexico•°•°•"
 txt[1]="EN LÍNEA:"
 txt[2]="EXPIRADOS:"
 txt[3]="SU SISTEMA:"
@@ -17,7 +17,7 @@ txt[4]="AMX - Telegram @vpnmx"
 txt[5]="GESTIONAR USUARIOS"
 txt[6]="HERRAMIENTAS"
 txt[7]="ACTUALIZAR"
-txt[8]="REMOVER ADM-ULTIMATE"
+txt[8]="REMOVER AMX - Android Mexico"
 txt[9]="OPCIÓN:"
 txt[10]="[ACTIVADO]"
 txt[11]="[DESACTIVADO]"
