@@ -75,18 +75,18 @@ function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Procedimento Realizado Con Exito!")"
-echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱""
+echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configure Su VPS con El Menu De Instalacion")"
-echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱""
+echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use Los Comandos"): michu, menu, adm"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Bienvenido A Michu Adm!")"
-echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱""
+echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -ne " \033[0m"
 }
 
 
 error_fun () {
-echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱""
+echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -e "\033[1;31mYour apt-get Error!"
 echo -e "Reboot the System!"
 echo -e "Use Command:"
