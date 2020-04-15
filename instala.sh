@@ -79,7 +79,7 @@ echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configure Su VPS con El Menu De Instalacion")"
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use Los Comandos"): michu, menu, adm"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Bienvenido A MICHU ADM!")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "SCRIPT MICHU ADM!")"
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -ne " \033[0m"
 }
@@ -112,7 +112,7 @@ apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://raw.githubusercontent.com/powermx/AMXADM/master/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
-echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[4]}SELECCIONAR IDIOMA\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne " OPCION: "; read lang
 case $lang in
@@ -135,7 +135,7 @@ esac
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -e ""
 echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  MICHU - ADM :)"
-echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  AndroidMexico"
+echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  Android Mexico"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS") ®"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
