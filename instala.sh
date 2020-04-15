@@ -66,7 +66,7 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALANDO LAS DEPENDENCIAS")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "INSTALANDO LAS DEPENDENCIAS")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
 chmod +x ./*
@@ -78,8 +78,8 @@ echo -e "${cor[3]} $(source trans -b pt:${id} "PROCEDIMIENTO EXITOSO :)!")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "AHORA SOLO CONFIGURE SU VPS CON El MENU DE INSTALACION")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[2]} $(source trans -b pt:${id} "USE LOS COMANDOS"): michu, menu, adm"
-echo -e "${cor[3]} $(source trans -b pt:${id} "SCRIPT MICHU ADM!")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "USE LOS COMANDOS"): michu, menu, adm"
+echo -e "${cor[2]} $(source trans -b pt:${id} "SCRIPT MICHU ADM!")"
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -ne " \033[0m"
 }
@@ -139,7 +139,7 @@ echo -e "${cor[3]} $(source trans -b pt:${id} "")\n\033[1;37m  Android Mexico"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS") ®"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalacion...")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "INICIANDO INSTALACION...")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/powermx/AMXADM/master/lista -o /dev/null
