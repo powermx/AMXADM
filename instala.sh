@@ -74,7 +74,7 @@ instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Perfecto Procedimento Realizado Con Exito!")"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Procedimento Realizado Con Exito!")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configure Su VPS con El Menu De Instalacion")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
