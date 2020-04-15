@@ -1,31 +1,32 @@
-﻿# ADM-SCRIPT-MOD By Laion NetFree
+![](https://github.com/powermx/AndroidMexicoADM/raw/master/banneradm.png)
 
-**ESTE PROYECTO ESTA EN PROCESO DE RECONTRUCION.**
+ADM Recodificado por el TEAM Android Mexico.
+<br>
+![](https://img.shields.io/github/v/release/powermx/badvpn)
+![](https://img.shields.io/github/repo-size/powermx/badvpn)
+![](https://img.shields.io/github/stars/powermx/badvpn.svg) 
+![](https://img.shields.io/github/forks/powermx/badvpn.svg) 
+![](https://img.shields.io/github/license/powermx/badvpn.svg)
 
-![logo](https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master/ADM_SCRIPT_by_LAION.jpg)
+![](https://img.shields.io/badge/Ubuntu-14.04-orange)
+![](https://img.shields.io/badge/Ubuntu-14.10-orange)
+![](https://img.shields.io/badge/Ubuntu-16.04-orange)
+![](https://img.shields.io/badge/Ubuntu-16.10-orange)
+![](https://img.shields.io/badge/Ubuntu-18.04-orange)
+![](https://img.shields.io/badge/Ubuntu-18.10-orange)
+![](https://img.shields.io/badge/Ubuntu-19.04-orange)
+![](https://img.shields.io/badge/Ubuntu-19.10-orange)
+![](https://img.shields.io/badge/Debian-7-red)
+![](https://img.shields.io/badge/Debian-8-red)
+![](https://img.shields.io/badge/Debian-9-red)
+![](https://img.shields.io/badge/Debian-10-red)
 
-**ADM Script MOD Repositorio**
+#### Instalacion
 
+Instalación：
 
-## :computer: Requisitos:
+`Pendiente`
 
-* Un sistema operativo basado en Linux. Recomendamos Ubuntu 14.04
-* Soporta Ubuntu 16 y 18 pero su mejor estabilidad es Ubuntu 14.04
-* Soporta Debian 7 - 8 y 9 pero su mejor estabilidad es Debian 7
-* Se recomienda usar una distro nueva o formatiada.
-
-## :floppy_disk: Instalación:
-
-> apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master/instala.sh; chmod +x instala.sh; ./instala.sh
-
-## :clipboard: Descripción:
-```
-* SIN MINERIA! 
-* SIN KEYS! 
-* VERSION GRATUITA 
-* SIN VIRUS TROJANO (BOTNET) 
-* ARCHIVOS LIBERADOS (DECENCRIPTADOS)
-```
-
-## :mailbox_with_mail: Nuestro Grupo
-**☆ https://t.me/ConectandoCalidad ☆**
+> AndroidMexico ADM
+                
+----
