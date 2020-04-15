@@ -80,7 +80,7 @@ echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configu
 echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use Los Comandos"): michu, menu, adm"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Bienvenido A Michu Adm!")"
-echo -e "${cor[1]}═══════════════❖•ೋ° 🐱 °ೋ•❖═══════════════"
+echo -e "${cor[1]}═══════════════❖•ೋ° 🐱 °ೋ•❖════════════════════════════"
 echo -ne " \033[0m"
 }
 
