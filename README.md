@@ -25,7 +25,7 @@ ADM Recodificado por el TEAM Android Mexico.
 
 Instalación：
 
-`Pendiente`
+`wget wget https://raw.githubusercontent.com/powermx/AMXADM/master/instala.sh && bash instala.sh`
 
 > AndroidMexico ADM
                 
