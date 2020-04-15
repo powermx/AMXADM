@@ -527,7 +527,7 @@ elif [[ "$sin_nao" = @(n|N) ]]; then
 break
 fi
 done
-echo '<h5 style="text-align: center;"><span style="color: #FFD700;">☣ La NetFree Es Tuya, Cuidala ☣</span></h5>' >> $local
+echo '<h5 style="text-align: center;"><span style="color: #FFD700;">☣ AMX - Android Mexico ☣</span></h5>' >> $local
 echo '<h1><p style="text-align:center;">➖➖➖➖➖➖➖➖➖➖</p></h1>' >> $local
 if [ -e "$local2" ]; then
 rm $local2  > /dev/null 2>&1
