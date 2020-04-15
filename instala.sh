@@ -140,7 +140,7 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS") ®"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalacion...")"
-echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱""
+echo -e "${cor[1]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/powermx/AMXADM/master/lista -o /dev/null
 valid_fun
