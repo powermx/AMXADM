@@ -9,7 +9,7 @@ done < $_dr
 unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
-txt[0]="ADM - Android Mexico"
+txt[0]="ADM - GascaMx"
 txt[1]="EN LÍNEA:"
 txt[2]="EXPIRADOS:"
 txt[3]="SU SISTEMA:"
