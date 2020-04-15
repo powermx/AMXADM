@@ -67,7 +67,7 @@ cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
 echo -e "${cor[3]} $(source trans -b pt:${id} "Instalando Las Dependencias")"
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[1]}✯ ➢ ✯ ➣ ✯ ➢ ✯ ➢ ✯ ➣ ✯ ➢ ✯ ➢ ✯ ➣ ✯ ➢ ✯ ➢ ✯ ➣ ✯ ➢ ✯ ➢ ✯ ➣ ✯ ➢ ✯ ➢ ✯ ➢ ✯ ➢ ✯ ➢ ✯ ➢ ✯"
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
@@ -79,7 +79,7 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configure Su VPS con El Menu De Instalacion")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use Los Comandos"): menu, adm"
-echo -e "${cor[2]} $(source trans -b pt:${id} "Accediendo A El Script Dele un buen uso!") saludos"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Bienvenido A Michu Adm!")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne " \033[0m"
 }
