@@ -66,19 +66,19 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-echo -e "${cor[3]} $(source trans -b pt:${id} "Instalando Las Dependencias")"
-echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALANDO LAS DEPENDENCIAS")"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-echo -e "${cor[3]} $(source trans -b pt:${id} "Procedimento Exitoso :)!")"
-echo -e "${cor[5]}🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱 ➣ 🐱 ➢ 🐱"
-echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Ahora Solo Configure Su VPS con El Menu De Instalacion")"
-echo -e "${cor[4]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[2]} $(source trans -b pt:${id} "Use Los Comandos"): michu, menu, adm"
+echo -e "${cor[3]} $(source trans -b pt:${id} "PROCEDIMIENTO EXITOSO :)!")"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "AHORA SOLO CONFIGURE SU VPS CON El MENU DE INSTALACION")"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[2]} $(source trans -b pt:${id} "USE LOS COMANDOS"): michu, menu, adm"
 echo -e "${cor[3]} $(source trans -b pt:${id} "SCRIPT MICHU ADM!")"
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -ne " \033[0m"
@@ -113,7 +113,7 @@ wget -O trans https://raw.githubusercontent.com/powermx/AMXADM/master/Install/tr
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
-echo -e "${cor[4]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne " OPCION: "; read lang
 case $lang in
 1)
@@ -140,7 +140,7 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS") ®"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalacion...")"
-echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/powermx/AMXADM/master/lista -o /dev/null
 valid_fun
