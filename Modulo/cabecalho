@@ -51,13 +51,13 @@ service apache2 restart > /dev/null 2>&1
     instalar_fun
     exit 0
     }
-remover_adm () {
+remover_Michu ADM () {
 echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[209]}"
 read -p " [ s / n ]: " certe_za
 [[ "$certe_za" = @(s|S|y|Y) ]] && {
 [[ -e /etc/openvpn/server.conf ]] && remover_ovpn & > /dev/null 2>&1
-echo -e "${cor[3]} Unistaling python${cor[0]}"
+echo -e "${cor[5]} Unistaling python${cor[0]}"
 fun_bar 'apt-get purge python' 'apt-get purge python3-pip'
 echo -e "${cor[5]} Unistaling Nmap${cor[0]}"
 fun_bar 'apt-get purge screen' 'apt-get purge nmap'
@@ -738,5 +738,5 @@ echo -e "${cor[2]} ° \033[1;37m${txt[3]} $_os"
 echo -e "${cor[2]} ° \033[1;37m${txt[331]} \033[1;31m$__IP"
 echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 ports_
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════ ${cor[0]}"
 echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
