@@ -51,7 +51,7 @@ service apache2 restart > /dev/null 2>&1
     instalar_fun
     exit 0
     }
-remover_Michu-ADM () {
+remover_adm () {
 echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[209]}"
 read -p " [ s / n ]: " certe_za
