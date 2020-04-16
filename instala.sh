@@ -51,7 +51,7 @@ echo -e "${cor[2]} $text Figlet"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 }
 
 
@@ -66,14 +66,14 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-echo -e "${cor[3]} $(source trans -b pt:${id} "INSTALANDO LAS DEPENDENCIAS")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALANDO LAS DEPENDENCIAS")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
-echo -e "${cor[3]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[3]} $(source trans -b pt:${id} "PROCEDIMIENTO CONCLUIDO :)!")"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "AHORA SOLO CONFIGURE SU VPS CON El MENU DE INSTALACION")"
@@ -112,7 +112,7 @@ apt-get install gawk -y > /dev/null 2>&1
 wget -O trans https://raw.githubusercontent.com/powermx/AMXADM/master/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
-echo -e "${cor[2]}SELECCIONAR IDIOMA\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
+echo -e "${cor[3]}SELECCIONAR IDIOMA\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-PT-BR\n[2]-EN\n[3]-ES\n[4]-FR"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne " OPCION: "; read lang
 case $lang in
