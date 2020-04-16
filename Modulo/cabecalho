@@ -72,14 +72,14 @@ fun_bar 'apt-get purge squid3' 'apt-get purge dropbear'
 echo -e "${cor[5]} Unistaling Scripts${cor[0]}"
 fun_bar 'apt-get purge apache2' 'apt-get purge php5 libapache2-mod-php5 php5-mcrypt'
 apt-get autoremove -y > /dev/null 2>&1
-echo -e "${cor[5]} finalizado! :D${cor[0]}"
+echo -e "${cor[5]} FINALIZADO! ⚡${cor[0]}"
 [[ -e /etc/adm-lite ]] && rm -rf /etc/adm-lite
 echo -e "\033[0m"
- echo -e "${cor[1]} =================================== ${cor[0]}"
+ echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
  exit
   } || {
  echo -e "${cor[1]} ${txt[210]} ${cor[0]}"
- echo -e "${cor[1]} =================================== ${cor[0]}"
+ echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
  return
  }
 }
@@ -459,7 +459,7 @@ txt_ofuscatw=$(echo $txtofus|rev)
 fun_atualizar () {
 cd /etc/adm-lite
 chmod 777 ./*
-echo -e "${cor[3]} "¿Realmente desea actualizar su ADM-Ultimate?""
+echo -e "${cor[3]} "¿Realmente desea actualizar su Michu-ADM?""
 read -p " [S/N]: " -e -i n sshsn
 [[ "$sshsn" = @(s|S|y|Y) ]] && {
 [[ -e /etc/adm-lite/idioma ]] && rm /etc/adm-lite/idioma
