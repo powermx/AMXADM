@@ -52,7 +52,7 @@ service apache2 restart > /dev/null 2>&1
     exit 0
     }
 remover_adm () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[209]}"
 read -p " [ s / n ]: " certe_za
 [[ "$certe_za" = @(s|S|y|Y) ]] && {
@@ -143,7 +143,7 @@ unset fail2_ban && fail2_ban=$(dpkg -l | grep fail2ban | grep ii)
 [[ -e ./vencidos ]] && __vencidos="\033[1;31m$(cat ./vencidos)" || __vencidos="\033[1;31m0"
 [[ "$(ps x | grep "ultimatebot" | grep -v "grep")" != "" ]] && bot="$_on" || bot="$_off"
 [[ ! -e /etc/adm-lite/versao_script ]] && echo 1 > /etc/adm-lite/versao_script
-P_SERVER="https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master"
+P_SERVER="https://raw.githubusercontent.com/powermx/AMXADM"
 v1=$(curl -sSL "${P_SERVER}/versaoatt")
 v2=$(cat /etc/adm-lite/versao_script)
 if [ -e /etc/squid/squid.conf ]; then
@@ -228,7 +228,7 @@ fi
 }
 
 funcao_cores () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[21]}"
 echo -e "${cor[1]} • AABBCCDDEEFF"
 echo -e "${cor[2]} • AABBCCDDEEFF"
@@ -243,11 +243,11 @@ ncor[4]="\033[1;34m"
 ncor[5]="\033[1;35m"
 ncor[6]="\033[1;36m"
 ncor[7]="\033[1;37m"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${ncor[1]} [1]•AA ${ncor[2]} [2]•AA ${ncor[3]} [3]•AA"
 echo -e "${ncor[4]} [4]•AA ${ncor[5]} [5]•AA ${ncor[6]} [6]•AA"
 echo -e "${ncor[7]} [7]•AA"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[22]}"
 unset ncor
 read -p " ${txt[23]} " _cores_
@@ -310,10 +310,10 @@ idioma[4]="it Italian"
 idioma[5]="pt Portuguese"
 idioma[6]="es Spanish"
 i="1"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[77]} ${txt[78]}
  ${txt[79]}"
-echo -e "${cor[1]} =================================== ${cor[3]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[3]}"
 while true; do
 [[ "${idioma[$i]}" = "" ]] && break
 a=$(echo ${idioma[$i]} | awk '{print $2}')
@@ -329,7 +329,7 @@ texto3=$(printf '%-20s' "[ $i ]-$a")
 i=$(($i+1))
 echo -e "$texto1 $texto2 $texto3"
 done
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e " ${txt[82]}"
 read -p " => " idiom
 number_var $idiom > /dev/null 2>&1
@@ -364,7 +364,7 @@ echo ""
 fi
 done
 echo ""
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "\033[0m"
 unset idioma
 exit 0
@@ -375,7 +375,7 @@ apt-get install gawk -y > /dev/null 2>&1
 [[ -e $_tmp4 ]] && rm $_tmp4
 rm $_dr && rm $_idioma
 cd /etc/adm-lite
-wget https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master/IDIOMA_VPS/$1/idioma
+wget https://raw.githubusercontent.com/powermx/AMXADM/IDIOMA_VPS/$1/idioma
 unset txt
 touch $HOME/fim
 exit 0
@@ -392,7 +392,7 @@ echo -e "${cor[2]} |$_cont| >${cor[5]} $u"
 [[ "$u" = "" ]] && break
 _cont=$(($_cont + 1))
 done
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[42]}"
 echo -ne "${cor[6]}"
 read -p " ${txt[9]} " select_user
@@ -498,7 +498,7 @@ useradd -M -s /bin/false -d /home/ovpn/ $CLIENT -e $valid
 usermod -p $(openssl passwd -1 $senha) $CLIENT
 #Arquivo
 echo -e " ${txt[318]}"
-echo -e "${cor[1]} =================================== \033[1;37m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ \033[1;37m"
 read -p " [S/N]: " -e -i S newfile
   [[ ${newfile} = @(s|S|y|Y) ]] && {
   echo -e " ${txt[319]}"
@@ -624,7 +624,7 @@ open_python () {
 echo -e "${cor[2]} ${cor[5]}${txt[279]}"
 read -p " [S/N]: " -e -i n pthsn
 [[ "$pthsn" = @(s|S|y|Y) ]] && {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 porta="$1"
 fuser -k $porta/tcp > /dev/null 2>&1
 sleep 2s
@@ -634,7 +634,7 @@ return
 }
 
 minhas_portas () {
-echo -e "${cor[1]} =================================== ${cor[4]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[4]}"
 portas_var="/tmp/portas"
 porta_var="/tmp/portas2"
 lsof -V -i tcp -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND" | grep "LISTEN" > $portas_var
@@ -659,12 +659,12 @@ echo -e " \033[1;37m[$i] -> \033[1;31m${service_serv[$i]} : \033[1;32m${service_
 i=$(($i+1))
 done < $porta_var
 echo -e "${cor[5]} ${txt[277]}"
-echo -e "${cor[1]} =================================== \033[1;37m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ \033[1;37m"
 read -p " [1-$(($i-1))]: " nun
 echo -e "\033[1;31m ${txt[283]} \033[1;32m${service_porta[$nun]}\033[1;31m : \033[1;32m${service_serv[$nun]}\033[0m"
 rm $portas_var
 rm $porta_var
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 if [ "${service_serv[$nun]}" = "dropbear" ]; then
 open_dropbear ${service_porta[$nun]}
 elif [ "${service_serv[$nun]}" = "sshd" ]; then
@@ -680,7 +680,7 @@ open_python ${service_porta[$nun]}
 else
 echo -e "\033[1;31m ${txt[278]}\033[0m"
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 }
 
 #VERIFICA SE E NUMERICO
@@ -728,15 +728,15 @@ rm $porta_var
 [[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m${txt[315]}" || vesaoSCT="\033[1;31m${txt[316]}"
 credit=$(cat ./menu_credito)
 __IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[2]} ∆ \033[1;37m$credit"
 echo -e "${cor[2]} √ \033[1;37m${txt[0]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 [[ "$VERIFICAR" = "on" ]] && 
 echo -e "${cor[2]} ° \033[1;37m${txt[1]} $__onlines ${cor[2]}    ° \033[1;37m${txt[2]} $__vencidos"
 echo -e "${cor[2]} ° \033[1;37m${txt[3]} $_os"
 echo -e "${cor[2]} ° \033[1;37m${txt[331]} \033[1;31m$__IP"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 ports_
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
