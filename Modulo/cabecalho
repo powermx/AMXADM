@@ -27,7 +27,7 @@ done
 echo -e " \033[1;33m[\033[1;31m${a}\033[1;33m] - \033[1;33m[\033[1;32m100%\033[1;33m]\033[0m"
 rm $HOME/fim
 }
-in  stalar_fun () {
+instalar_fun () {
 cor[2]="\033[1;37m"
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} $text Curl"
