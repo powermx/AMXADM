@@ -83,7 +83,7 @@ if [ "$var_number" = "" ]; then
  if [ -e $HOME/adm-backup ]; then
 rm $HOME/adm-backup
  fi
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  else
 datas="$var_number"
@@ -95,7 +95,7 @@ if [ "$var_number" = "" ]; then
  if [ -e $HOME/adm-backup ]; then
 rm $HOME/adm-backup
  fi
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  else
 limit="$var_number"
@@ -108,19 +108,19 @@ echo "$user $pass $limit $data" >> /root/adm-backup
 echo -e "${cor[4]} $user\n $pass\n $limit\n $data"
  fi
 fi
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 done
 echo "admpro" >> $HOME/adm-backup
 echo -e "${cor[5]} ${txt[106]}"
 echo -e "${cor[5]} ${txt[107]} \033[1;36m$HOME/adm-backup! ${cor[0]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
 function_2 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[108]}
  ${txt[109]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 _ba="/root/adm-backup"
 read -p " [${txt[110]}]: " -e -i $_ba arq
 [[ ! -e "$arq" ]] && {
@@ -141,31 +141,31 @@ usuario=$(echo "$backup_adm" | awk '{print $1}')
 senha=$(echo "$backup_adm" | awk '{print $2}')
 limite=$(echo "$backup_adm" | awk '{print $3}')
 data=$(echo "$backup_adm" | awk '{print $4}')
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 auto_add_user "$usuario" "$senha" "$limite" "$data"
 done < $arq_bkp
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 cd /etc/adm-lite
 }
 
 function_3 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[115]}\n ${txt[116]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}" 
+echo -e "${cor[1]} =================================== ${cor[0]}" 
 echo 3 > /proc/sys/vm/drop_caches
 sysctl -w vm.drop_caches=3 > /dev/null 2>&1
 rm -rf /tmp/*
 echo -e "${cor[5]} ${txt[117]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
 function_4 () {
 pid_badvpn=$(ps x | grep badvpn | grep -v grep | awk '{print $1}')
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 if [ "$pid_badvpn" = "" ]; then
     echo -e "${cor[4]} ${txt[118]}\n ${txt[119]}\n ${txt[120]}\n ${txt[121]}"
     echo -e "${cor[5]} ${txt[122]}"
-⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸    if [[ ! -e /bin/badvpn-udpgw ]]; then
+===================================    if [[ ! -e /bin/badvpn-udpgw ]]; then
     cd $HOME
     wget https://raw.githubusercontent.com/powermx/AMXADM/Install/badvpn-udpgw -o /dev/null
     mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
@@ -173,26 +173,26 @@ if [ "$pid_badvpn" = "" ]; then
     fi
     screen -dmS screen /bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10
     [[ "$(ps x | grep badvpn | grep -v grep | awk '{print $1}')" ]] && echo -e "${cor[4]} ${txt[123]}" || echo -e "${cor[4]} ${txt[284]}"
-    echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+    echo -e "${cor[1]} =================================== ${cor[0]}"
     unset pid_badvpn
     return 0
 else
     echo -e "${cor[4]} ${txt[124]}"
-    echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+    echo -e "${cor[1]} =================================== ${cor[0]}"
     kill -9 $(ps x | grep badvpn | grep -v grep | awk '{print $1'}) > /dev/null 2>&1
     killall badvpn-udpgw > /dev/null 2>&1
     [[ ! "$(ps x | grep badvpn | grep -v grep | awk '{print $1}')" ]] && echo -e "${cor[4]} ${txt[125]}"
-    echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+    echo -e "${cor[1]} =================================== ${cor[0]}"
     unset pid_badvpn
     fi
 }
 
 function_5 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[126]}"
 echo -e "${cor[4]} ${txt[127]}"
 echo -e "${cor[4]} ${txt[128]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[129]}"
 sleep 1s
 if [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]]; then
@@ -203,7 +203,7 @@ echo -e "${cor[5]} ${txt[132]}"
 echo -e "${cor[5]} ${txt[133]}"
 echo -e "${cor[5]} ${txt[134]}"
 echo -e "${cor[5]} ${txt[135]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 read -p " ${txt[136]} [s/n]: " -e -i s resp_osta
 echo -e "\033[1;37m"
 if [[ "$resp_osta" = 's' ]]; then
@@ -219,17 +219,17 @@ net.ipv4.tcp_slow_start_after_idle = 0" >> /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf > /dev/null 2>&1
 echo -e "${cor[5]} ${txt[137]} TCP"
 echo -e "${cor[5]} ${txt[138]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  else
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
  else
 #REMOVE
 echo -e "${cor[5]} ${txt[137]} TCP"
 echo -e "${cor[5]} ${txt[139]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 read -p " ${txt[140]} TCP? [s/n]: " -e -i n res_posta
 if [[ "$res_posta" = 's' ]]; then
 unset res_posta
@@ -244,10 +244,10 @@ net.ipv4.tcp_slow_start_after_idle = 0" /etc/sysctl.conf > /tmp/syscl && mv -f /
 sysctl -p /etc/sysctl.conf > /dev/null 2>&1
 echo -e "${cor[5]} ${txt[141]} TCP"
 echo -e "${cor[5]} ${txt[142]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  else
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  fi
 fi
@@ -258,9 +258,9 @@ source fai2ban
 }
 
 function_7 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[157]}\n ${txt[158]}\n ${txt[159]}\n ${txt[160]}\n ${txt[161]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 sleep 2s
 if [ -e /etc/squid/squid.conf ]; then
 squid_var="/etc/squid/squid.conf"
@@ -276,14 +276,14 @@ if [[ `grep -c "^$teste_cache" $squid_var` -gt 0 ]]; then
   echo -e "${cor[5]} ${txt[167]}\n ${txt[168]}"
   mv -f ${squid_var}.bakk $squid_var
   echo -e "${cor[5]} ${txt[165]}"
-  echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+  echo -e "${cor[1]} =================================== ${cor[0]}"
   service squid restart > /dev/null 2>&1
   service squid3 restart > /dev/null 2>&1
   return 0
   }
 fi
 echo -e "${cor[5]} ${txt[163]}\n ${cor[5]} ${txt[164]}\n ${txt[166]}"
-⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸_tmp="#CACHE DO SQUID\ncache_mem 200 MB\nmaximum_object_size_in_memory 32 KB\nmaximum_object_size 1024 MB\nminimum_object_size 0 KB\ncache_swap_low 90\ncache_swap_high 95"
+===================================_tmp="#CACHE DO SQUID\ncache_mem 200 MB\nmaximum_object_size_in_memory 32 KB\nmaximum_object_size 1024 MB\nminimum_object_size 0 KB\ncache_swap_low 90\ncache_swap_high 95"
 [[ "$squid_var" = "/etc/squid/squid.conf" ]] && _tmp+="\ncache_dir ufs /var/spool/squid 100 16 256\naccess_log /var/log/squid/access.log squid" || _tmp+="\ncache_dir ufs /var/spool/squid3 100 16 256\naccess_log /var/log/squid3/access.log squid"
 while read s_squid; do
 [[ "$s_squid" != "cache deny all" ]] && _tmp+="\n${s_squid}"
@@ -291,22 +291,22 @@ done < $squid_var
 cp ${squid_var} ${squid_var}.bakk
 echo -e "${_tmp}" > $squid_var
 echo -e "${cor[5]} ${txt[165]}\n ${txt[168]}"
-⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸service squid restart > /dev/null 2>&1
+===================================service squid restart > /dev/null 2>&1
 service squid3 restart > /dev/null 2>&1
 }
 
 function_8 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[170]}"
 echo -e "${cor[5]} ${txt[171]}"
 echo -e "${cor[5]} ${txt[172]}"
 echo -e "${cor[5]} ${txt[173]} \033[1;31m$HOME"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 meu_ip
 echo -e "${cor[2]} |1| >${cor[3]} ${txt[169]}"
 echo -e "${cor[2]} |2| >${cor[3]} ${txt[174]}"
 echo -e "${cor[2]} |3| >${cor[3]} ${txt[175]}"
-⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸read -p " |1-3|: " arquivo_online_adm
+===================================read -p " |1-3|: " arquivo_online_adm
 number_var $arquivo_online_adm
 if [ "$var_number" = "" ]; then
 return
@@ -315,22 +315,22 @@ online_adm="$var_number"
 fi
 if [ "$online_adm" -gt 3 ]; then
 echo -e "${cor[5]} ${txt[175]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 if [ "$online_adm" = 3 ]; then
-⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸for my_arqs in `ls /var/www/html`; do
+===================================for my_arqs in `ls /var/www/html`; do
 if [ "$my_arqs" != "index.html" ]; then
  if [ ! -d "$my_arqs" ]; then
 echo -e " \033[1;36mhttp://$IP:81/$my_arqs\033[0m"
  fi
 fi
 done
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 if [ "$online_adm" = 2 ]; then
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 unset _cont
 _cont="1"
 for my_arqs in `ls /var/www/html`; do
@@ -343,7 +343,7 @@ _cont=$(($_cont + 1))
 fi
 done
 _cont=$(($_cont - 1))
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[177]}"
 read -p " | 1 - $_cont |: " slct
 number_var $slct
@@ -356,20 +356,20 @@ unset _cont
 arquivo_move="${select_arc[$slct]}"
  if [ "$arquivo_move" = "" ]; then
 echo -e "${cor[5]} ${txt[178]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
  fi
 rm -rf /var/www/html/$arquivo_move > /dev/null 2>&1
 rm -rf /var/www/$arquivo_move > /dev/null 2>&1
 echo -e "${cor[5]} ${txt[179]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]}=================================== ${cor[0]}"
 return
 fi
 unset _cont
 _cont="1"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[181]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 for my_arqs in `ls $HOME`; do
 if [ ! -d "$my_arqs" ]; then
 select_arc[$_cont]="$my_arqs"
@@ -378,7 +378,7 @@ _cont=$(($_cont + 1))
 fi
 done
 _cont=$(($_cont - 1))
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[177]}"
 read -p " | 1 - $_cont |: " slct
 number_var $slct
@@ -391,7 +391,7 @@ unset _cont
 arquivo_move="${select_arc[$slct]}"
 if [ "$arquivo_move" = "" ]; then
 echo -e "${cor[5]} ${txt[178]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 if [ ! -d /var ]; then
@@ -412,17 +412,17 @@ fi
 chmod -R 755 /var/www
 cp $HOME/$arquivo_move /var/www/$arquivo_move
 cp $HOME/$arquivo_move /var/www/html/$arquivo_move
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[5]} ${txt[180]}"
 echo -e "\033[1;36m http://$IP:81/$arquivo_move\033[0m"
 echo -e "${cor[5]} ${txt[179]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
 function_9 () {
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[184]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 ping=$(ping -c1 google.com |awk '{print $8 $9}' |grep -v loss |cut -d = -f2 |sed ':a;N;s/\n//g;ta')
 starts_test=$(python ./speedtest.py)
 down_load=$(echo "$starts_test" | grep "Download" | awk '{print $2,$3}')
@@ -430,25 +430,25 @@ up_load=$(echo "$starts_test" | grep "Upload" | awk '{print $2,$3}')
 echo -e "${cor[5]} ${txt[185]}: $ping"
 echo -e "${cor[5]} ${txt[186]}: $up_load"
 echo -e "${cor[5]} ${txt[187]}: $down_load"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 }
 
 function_10 () {
 null="\033[1;31m"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 if [ ! /proc/cpuinfo ]; then
 echo -e "${cor[4]} ${txt[188]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 if [ ! /etc/issue.net ]; then
 echo -e "${cor[4]} ${txt[188]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 if [ ! /proc/meminfo ]; then
 echo -e "${cor[4]} ${txt[188]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 fi
 totalram=$(free | grep Mem | awk '{print $2}')
@@ -490,7 +490,7 @@ echo -e "${cor[5]} ${txt[199]}: ${null}$(hostname)"
 echo -e "${cor[5]} ${txt[200]}: ${null}$(ip addr | grep inet | grep -v inet6 | grep -v "host lo" | awk '{print $2}' | awk -F "/" '{print $1}')"
 echo -e "${cor[5]} ${txt[201]}: ${null}$(uname -r)"
 echo -e "${cor[5]} ${txt[202]}: ${null}$(uname -m)"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 return
 }
 
@@ -501,10 +501,10 @@ echo -e "${cor[5]} $payload ${txt[213]}"
 echo -e "${cor[5]} ${txt[214]}"
 return
 fi
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} |1| >${cor[3]} ${txt[215]}"
 echo -e "${cor[2]} |2| >${cor[3]} ${txt[216]}"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 read -p " | 1 - 2 |: " var_pay
 number_var $var_pay
 if [ "$var_number" = "" ]; then
@@ -520,9 +520,9 @@ fi
 if [ "$var_payload" = "1" ]; then
 echo -e "${cor[4]} ${txt[215]}"
 echo -e "${cor[5]} ${txt[218]} $payload:"
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 cat $payload | awk -F "/" '{print $1,$2,$3,$4}'
-echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
 read -p " ${txt[219]} ${txt[220]}: " hos
 if [[ $hos != \.* ]]; then
 echo -e "${cor[5]} ${txt[220]}"
