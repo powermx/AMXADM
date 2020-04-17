@@ -14,7 +14,7 @@ net_meter () {
 net_dir="/etc/adm-lite/userDIR/usr_cnx"
 if [ ! -e "$net_dir" ]; then
 echo -e "${cor[5]} ${txt[289]}"
-echo -e "${cor[1]} ======================================================\033[0m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸\033[0m"
 return
 fi
 net_cent="/tmp/porcentagem"
@@ -28,9 +28,9 @@ sed -i '/^$/d' $net_dir
 bb=$(printf '%-18s' "${txt[285]}")
 aa=$(printf '%-19s' "${txt[287]}")
 cc=$(printf '%-18s' "${txt[286]}")
-echo -e "${cor[1]} ======================================================\033[0m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸\033[0m"
 echo -e "\033[1;33m $aa $bb $cc"
-echo -e "${cor[1]} ======================================================\033[0m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸\033[0m"
 while read u; do
 b=$(printf '%-18s' "$(($(echo $u | awk '{print $2}')/970)) - MB")
 a=$(printf '%-20s' "$(echo $u | awk '{print $1}')")
@@ -45,7 +45,7 @@ echo -e "\033[1;32m $a \033[1;31m$b \033[1;32m$c"
 fi
 done < $net_dir
 [[ "$(cat $net_dir)" = "" ]] && echo -e "${cor[5]} ${txt[289]}"
-echo -e "${cor[1]} ======================================================\033[0m"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸\033[0m"
 unset net_dir
 }
 
@@ -112,15 +112,15 @@ return
 }
 
 function_1 () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]} ${txt[38]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 for u in `awk -F : '$3 > 900 { print $1 }' /etc/passwd |grep -v "nobody" |grep -vi polkitd |grep -vi system-`; do
 echo -e "${cor[5]} $u"
 done
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]} ${txt[27]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[28]}"; read -p " ≈≈≈≈≈> " name
 if [ -z $name ]; then
 echo -e "${cor[5]} ${txt[29]} ${cor[0]}" 
@@ -131,16 +131,16 @@ then
 echo -e "${cor[5]} ${txt[30]} ${cor[0]}"
 return
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[31]} $name"
 read -p " ${txt[35]} " pass
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[32]}  $name"
 read -p " ${txt[37]} " daysrnf
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[33]}  $name"
 read -p " ${txt[36]} " limit
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 meu_ip
 if [ "$OPENVPN" = "on" ]; then
 open_1 $name $pass $daysrnf $limit s
@@ -149,7 +149,7 @@ echo -e "${cor[5]} ${txt[34]} ${cor[4]}$name"
 echo -e "${cor[5]} ${txt[35]} ${cor[4]}$pass"
 echo -e "${cor[5]} ${txt[36]} ${cor[4]}$limit"
 echo -e "${cor[5]} ${txt[37]} ${cor[4]}$datexp"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 rm ./$CLIENT.ovpn > /dev/null 2>&1
 return
 fi
