@@ -3,7 +3,7 @@
 install () {
     cd $HOME && mkdir socks
     cd socks
-    patch="https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master/Install/backsocz"
+    patch="https://raw.githubusercontent.com/powermx/AMXADM/master/Install/backsocz"
     arq="backsocz"
     wget $patch -o /dev/null
     unzip $arq > /dev/null 2>&1
