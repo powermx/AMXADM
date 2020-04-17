@@ -79,7 +79,7 @@ echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸�
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use os Comandos"): menu, adm"
-echo -e "${cor[2]} $(source trans -b pt:${id} "BIENVENIDO A MICHU ADM!")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "BIENVENIDO A MICHUADM!")"
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -ne " \033[0m"
 }
