@@ -533,7 +533,7 @@ if [ -e "$local2" ]; then
 rm $local2  > /dev/null 2>&1
 cp $local $local2 > /dev/null 2>&1
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 service ssh restart > /dev/null 2>&1 &
 service sshd restart > /dev/null 2>&1 & 
 service dropbear restart > /dev/null 2>&1 &
@@ -542,9 +542,9 @@ return 0
 }
 limiter_fun () {
 [[ "$VERIFICAR" = "on" ]] && {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} LIMITER RUNNING IN VERIFICACION ${cor[0]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 return
 }
    if [[ $limiter_on = "" ]]; then
@@ -552,16 +552,16 @@ return
    chmod +x /etc/adm-lite/limiter.sh &
    /etc/adm-lite/limiter.sh &
    screen -dmS Limiter-ssh /etc/adm-lite/limiter.sh
-   echo -e "${cor[1]} =================================== ${cor[0]}"
+   echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
    echo -e "${cor[5]} LIMITER STARTS ${cor[0]}"
-   echo -e "${cor[1]} =================================== ${cor[0]}"
+   echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
    else
    unset limiter_on
    killall limiter.sh > /dev/null 2>&1
    kill -9 $(ps x|grep -v grep|grep limiter.sh|awk '{print $1}')
-   echo -e "${cor[1]} =================================== ${cor[0]}"
+   echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
    echo -e "${cor[5]} LIMITER STOPPED ${cor[0]}"
-   echo -e "${cor[1]} =================================== ${cor[0]}"
+   echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
    fi
 }
 [[ "$1" = "1" ]] && function_1
