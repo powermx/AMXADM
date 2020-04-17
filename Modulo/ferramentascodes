@@ -165,7 +165,8 @@ echo -e "${cor[1]} =================================== ${cor[0]}"
 if [ "$pid_badvpn" = "" ]; then
     echo -e "${cor[4]} ${txt[118]}\n ${txt[119]}\n ${txt[120]}\n ${txt[121]}"
     echo -e "${cor[5]} ${txt[122]}"
-===================================    if [[ ! -e /bin/badvpn-udpgw ]]; then
+echo -e "${cor[1]} =================================== ${cor[0]}"
+if [[ ! -e /bin/badvpn-udpgw ]]; then
     cd $HOME
     wget https://raw.githubusercontent.com/powermx/AMXADM/Install/badvpn-udpgw -o /dev/null
     mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
