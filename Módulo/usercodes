@@ -162,7 +162,7 @@ echo -e "${cor[5]} ${txt[34]} ${cor[4]}$name"
 echo -e "${cor[5]} ${txt[35]} ${cor[4]}$pass"
 echo -e "${cor[5]} ${txt[36]} ${cor[4]}$limit"
 echo -e "${cor[5]} ${txt[37]} ${cor[4]}$datexp"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo "senha: $pass" > $dir_user/$name
 echo "limite: $limit" >> $dir_user/$name
 echo "data: $valid" >> $dir_user/$name
@@ -171,18 +171,18 @@ return
 }
 
 function_2 () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]} ${txt[39]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[2]} |1| >${cor[3]} ${txt[40]}"
 echo -e "${cor[2]} |2| >${cor[3]} ${txt[41]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -ne "${cor[6]}"
 read -p "${txt[9]} " opc_del
 if [ "$opc_del" = "1" ]; then
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]} ${txt[38]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 select_users
 name="$select_name"
 if [ "$name" = "" ]; then
@@ -190,7 +190,7 @@ return
 fi
 if [ "$OPENVPN" = "on" ]; then
 open_2 $name
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 return
 fi
 userdel --force $name > /dev/null 2>/dev/null
@@ -202,14 +202,14 @@ fi
 if [ -e $dir_user/$name ]; then
 rm $dir_user/$name
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e " $name ${cor[2]} ${txt[45]} "
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 return
 fi
  if [ "$opc_del" = "2" ]; then
 for name in `awk -F : '$3 > 900 { print $1 }' /etc/passwd |grep -v "nobody" |grep -vi polkitd |grep -vi system-`; do
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[5]} ${txt[46]} $name ?"
 read -p " [S/N]: " _remover_
 if [[ "$_remover_" = "s" || "$_remover_" = "S" ]]; then
@@ -230,7 +230,7 @@ sleep 0.3s
  fi
 fi
 done
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 else
 return
 fi
@@ -238,9 +238,9 @@ fi
 
 
 function_3 () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]} ${txt[48]}"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 select_users
 if [ "$select_name" = "" ]; then
 return
