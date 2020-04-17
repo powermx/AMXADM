@@ -134,7 +134,7 @@ id="es"
 esac
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -e ""
-echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m MICHU-ADM :)"
+echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  ADM - AMX :)"
 echo -e "${cor[3]} $(source trans -b pt:${id} "")\n\033[1;37m  ANDROID MEXICO"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS") ®"
