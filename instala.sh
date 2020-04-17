@@ -132,15 +132,16 @@ id="fr"
 id="es"
 ;;
 esac
-echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e ""
-echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m ADM - AMX"
-echo -e "${cor[3]} $(source trans -b pt:${id} "")\n\033[1;37m  ANDROID MEXICO"
-echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR DEV AMX-SCRIPTS ®"
-echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[3]} $(source trans -b pt:${id} "INICIANDO INSTALACION"
-echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
+echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  ADM - AMX :)"
+echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m  AndroidMexico"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne "${cor[4]}"
 wget -O lista https://raw.githubusercontent.com/powermx/AMXADM/master/lista -o /dev/null
 valid_fun
+
