@@ -1,4 +1,4 @@
-![](https://github.com/powermx/AMXADM/raw/master/banneradm.png)
+  ![](https://github.com/powermx/AMXADM/raw/master/banneradm.png)
 
 ADM Recodificado por el TEAM Android Mexico.
 <br>
