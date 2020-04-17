@@ -250,7 +250,7 @@ echo -e "${cor[5]} ${txt[50]} $namer"
 echo -e "${cor[2]} |1| >${cor[3]} ${txt[51]} $namer"
 echo -e "${cor[2]} |2| >${cor[3]} ${txt[52]} $namer"
 echo -e "${cor[2]} |3| >${cor[3]} ${txt[53]} $namer"
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 read -p " ${txt[9]} " _opt
 if [ "$_opt" = "1" ]; then
 read -p "${txt[54]} " new_limit
@@ -307,9 +307,9 @@ fi
 }
 
 function_4 () {
-echo -e "${cor[1]} ============================================================= ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e "${cor[4]}  >  ${txt[64]}    ${txt[65]}   ${txt[66]}     ${txt[85]}        ${txt[67]}"
-echo -e "${cor[1]} ============================================================= ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 _cont="0"
 if [ ! -e $tempousers ]; then
 touch $tempousers
@@ -379,20 +379,20 @@ echo -e " ${cor[2]} > ${cor[7]} ${txto[1]} ${txto[2]} ${txto[3]} ${txto[4]} ${tx
 fi
 _cont=$(($_cont + 1))
 done
-echo -e "${cor[1]} ============================================================= ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -e " ∆ ${txt[71]} $_cont ${txt[72]}"
-echo -e "${cor[1]} ============================================================= ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 unset txt_
 }
 
 function_5 () {
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 msga[1]=$(printf '%-12s' "${txt[74]}")
 msga[2]=$(printf '%-9s' "${txt[75]}")
 msga[3]=$(printf '%-6s' "${txt[76]} HH:MM")
 echo -e "${cor[4]} ${msga[1]} ${msga[2]} ${msga[3]} ${cor[0]}"
 unset msga
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 [[ ! -e $tempousers ]] && touch $tempousers
 _data_now=$(date +%s)
 for user in `awk -F : '$3 > 900 { print $1 }' /etc/passwd |grep -v "nobody" |grep -vi polkitd |grep -vi system-`; do
@@ -424,12 +424,12 @@ algumon="on"
 fi
 done
 [[ "$algumon" = "" ]] &&  echo -e "\033[1;31m ${txt[86]}" && unset algumon
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 }
 
 function_6 () {
 unset _removidos
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 datenow=$(date +%s)
 for user in $(awk -F: '{print $1}' /etc/passwd); do
 expdate=$(chage -l $user|awk -F: '/Account expires/{print $2}')
@@ -451,7 +451,7 @@ if [ "$_removidos" = "" ]; then
 echo -e "${cor[5]} ${txt[88]}"
 unset _removidos
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 }
 
 txt_font () {
@@ -492,7 +492,7 @@ local=$(echo "$chk" |grep -v "#Banner" | grep Banner | awk '{print $2}')
 echo "Banner /etc/bannerssh" >> /etc/ssh/sshd_config
 local="/etc/bannerssh"
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
 echo -ne "\033[1;37m"
 read -p " ${txt[232]}: " ban_ner
 echo -e " \033[1;31m[ 1 ]\033[1;33m - ${txt[227]}"
@@ -501,7 +501,7 @@ echo -e " \033[1;31m[ 3 ]\033[1;33m - ${txt[229]}"
 echo -e " \033[1;31m[ 4 ]\033[1;33m - ${txt[230]}"
 echo -e " \033[1;31m[ 5 ]\033[1;33m - ${txt[231]}"
 read -p " [ 1 - 5 ]: " ban_ner_cor
-echo '<h1><font>=============================</font></h1>' > $local
+echo '<h1><font>⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸</font></h1>' > $local
 if [[ "$ban_ner_cor" = "1" ]]; then
 echo '<h1><font color="green">' >> $local
 elif [[ "$ban_ner_cor" = "2" ]]; then
