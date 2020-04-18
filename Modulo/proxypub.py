@@ -17,7 +17,7 @@ import traceback
 if sys.argv[2:]:
  msg1 = sys.argv[2]
 else:
- msg1 = "ADM-ULTIMATE"
+ msg1 = "MICHU-ADM"
 
 
 class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
