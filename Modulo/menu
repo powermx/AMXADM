@@ -72,7 +72,4 @@ ${value} ${idioma}
 *)
 source menu
 ;;
-10)
-source extras
-;;
 esac
