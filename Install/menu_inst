@@ -284,13 +284,13 @@ fun_dropbear () {
  user -k 443/tcp > /dev/null 2>&1
  return 0
  }
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
-echo -e " $(source trans -b es:${id} "DROPBEAR USA EL PUERTO 443")\033[1;37m"
+echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR DROPBEAR")\n$barra"
+echo -e " $(source trans -b es:${id} "DROPBEAR USA EL PUERTO 442")\033[1;37m"
 echo -e "$barra"
-   [[ $(mportas|grep 443) != "" ]] && {
-   echo -e "\033[1;31m $(source trans -b pt:${id} "PORTA 443 EM USO")\033[1;37m"
+   [[ $(mportas|grep 442) != "" ]] && {
+   echo -e "\033[1;31m $(source trans -b pt:${id} "PORTA 442 EM USO")\033[1;37m"
    echo -e "\033[1;31m $(source trans -b es:${id} "INTENTE NUEVAMENTE")\033[1;37m"
-   fuser -k 443/tcp > /dev/null 2>&1
+   fuser -k 442/tcp > /dev/null 2>&1
    echo -e "$barra"
    return 1
    }
@@ -331,7 +331,7 @@ echo -e "$barra"
 touch /etc/dropbear/banner
 echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
 echo -e "NO_START=0" > /etc/default/dropbear
-echo -e 'DROPBEAR_EXTRA_ARGS="-p 443"' >> /etc/default/dropbear
+echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
 echo -e "DROPBEAR_RECEIVE_WINDOW=65536" >> /etc/default/dropbear
 } || {
@@ -368,7 +368,7 @@ touch /etc/dropbear/banner
 echo -e "$barra"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
 echo -e "NO_START=0" > /etc/default/dropbear
-echo -e 'DROPBEAR_EXTRA_ARGS="-p 443"' >> /etc/default/dropbear
+echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
 echo -e "DROPBEAR_RECEIVE_WINDOW=65536" >> /etc/default/dropbear
 }
