@@ -2,7 +2,6 @@
 source cabecalho
 [[ -e /etc/bash.bashrc-bakup ]] && _autorun="\033[1;32m${txt[10]}" || _autorun="\033[1;31m${txt[11]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
-cat /etc/adm-lite/michu
 echo -e "${cor[2]} ∆ ${cor[5]} ${txt[4]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[2]} [0] >${cor[4]} ${txt[13]}"
