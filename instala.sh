@@ -133,7 +133,7 @@ id="es"
 ;;
 esac
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m MICHU-ADM "
+echo -e "${cor[2]} $(source trans -b pt:${id} "")\n\033[1;37m  MICHU - ADM :)"
 echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m AndroidMexico"
 echo -e "${cor[1]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
