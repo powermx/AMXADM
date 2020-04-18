@@ -85,7 +85,7 @@ fun_squid  () {
   service squid3 restart > /dev/null 2>&1
   service squid restart > /dev/null 2>&1
   [[ -e $var_squid ]] && {
-  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQU1D")\n$barra"
+  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQUID")\n$barra"
   fun_bar "apt-get remove squid3 -y"
   service squid stop > /dev/null 2>&1
   service squid3 stop > /dev/null 2>&1
@@ -94,7 +94,7 @@ fun_squid  () {
   return 0
   }
 #Instalar
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQU1D")\n$barra"
+echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQUID ADM-ULTIMATE")\n$barra"
 fun_ip
 echo -ne " $(source trans -b pt:${id} "Confirme seu ip")"; read -p ": " -e -i $IP ip
 echo -e "$barra\n $(source trans -b pt:${id} "Agora Escolha as Portas que Deseja No Squid")"
@@ -116,7 +116,7 @@ unset PORT
   return 1
   }
 echo -e "$barra"
-echo -e " $(source trans -b pt:${id} "INSTALANDO SQU1D")"
+echo -e " $(source trans -b pt:${id} "INSTALANDO SQUID")"
 echo -e "$barra"
 fun_bar "apt-get install squid3 -y"
 echo -e "$barra"
@@ -226,7 +226,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname MiCHU
+visible_hostname ADM-MANAGER
 
 via off
 forwarded_for off
@@ -250,7 +250,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname MICHU
+visible_hostname ADM-MANAGER
 
 via off
 forwarded_for off
@@ -264,7 +264,7 @@ service ssh restart > /dev/null 2>&1
 service squid3 restart > /dev/null 2>&1
 service squid restart > /dev/null 2>&1
 echo -e " \033[1;32m[OK]"
-echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQU1D CONFIGURADO")\n$barra"
+echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQUID CONFIGURADO")\n$barra"
 mportas > /tmp/portz
 while read portas; do
 [[ $portas = "" ]] && break
@@ -277,20 +277,20 @@ done
 
 fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && {
- echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO DR0PBEAR")\n$barra"
+ echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO DROPBEAR")\n$barra"
  fun_bar "apt-get remove dropbear -y"
- echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} " Removido")\n$barra"
+ echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "Dropbear Removido")\n$barra"
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
- user -k 442/tcp > /dev/null 2>&1
+ user -k 443/tcp > /dev/null 2>&1
  return 0
  }
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR DR0PBEAR")\n$barra"
-echo -e " $(source trans -b es:${id} "DR0PBEAR USA EL PUERTO 442")\033[1;37m"
+echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
+echo -e " $(source trans -b es:${id} "DROPBEAR USA EL PUERTO 443")\033[1;37m"
 echo -e "$barra"
-   [[ $(mportas|grep 442) != "" ]] && {
-   echo -e "\033[1;31m $(source trans -b pt:${id} "PORTA 442 EM USO")\033[1;37m"
+   [[ $(mportas|grep 443) != "" ]] && {
+   echo -e "\033[1;31m $(source trans -b pt:${id} "PORTA 443 EM USO")\033[1;37m"
    echo -e "\033[1;31m $(source trans -b es:${id} "INTENTE NUEVAMENTE")\033[1;37m"
-   fuser -k 442/tcp > /dev/null 2>&1
+   fuser -k 443/tcp > /dev/null 2>&1
    echo -e "$barra"
    return 1
    }
@@ -324,14 +324,14 @@ TCPKeepAlive yes
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes" > /etc/ssh/sshd_config
-echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando DR0PBEAR")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando dropbear")"
 echo -e "$barra"
 fun_bar "apt-get install dropbear -y"
 echo -e "$barra"
 touch /etc/dropbear/banner
 echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
 echo -e "NO_START=0" > /etc/default/dropbear
-echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
+echo -e 'DROPBEAR_EXTRA_ARGS="-p 443"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
 echo -e "DROPBEAR_RECEIVE_WINDOW=65536" >> /etc/default/dropbear
 } || {
@@ -361,14 +361,14 @@ TCPKeepAlive yes
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes" > /etc/ssh/sshd_config
-echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando DR0PBEAR")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando dropbear")"
 echo -e "$barra"
 fun_bar "apt-get install dropbear -y"
 touch /etc/dropbear/banner
 echo -e "$barra"
-echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando DR0BEAR")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
 echo -e "NO_START=0" > /etc/default/dropbear
-echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
+echo -e 'DROPBEAR_EXTRA_ARGS="-p 443"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
 echo -e "DROPBEAR_RECEIVE_WINDOW=65536" >> /etc/default/dropbear
 }
