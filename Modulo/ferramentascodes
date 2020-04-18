@@ -168,7 +168,7 @@ if [ "$pid_badvpn" = "" ]; then
     echo -e "${cor[1]} =================================== ${cor[0]}"
     if [[ ! -e /bin/badvpn-udpgw ]]; then
     cd $HOME
-    wget https://raw.githubusercontent.com/powermx/AMXADM/Install/badvpn-udpgw -o /dev/null
+    wget https://github.com/powermx/AMXADM/raw/master/Install/badvpn-udpgw -o /dev/null
     mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
     chmod 777 /bin/badvpn-udpgw
     fi
