@@ -30,19 +30,17 @@ rm $HOME/fim
 instalar_fun () {
 cor[2]="\033[1;37m"
 text=$(source trans -b pt:${id} "Instalando")
-echo -e "${cor[2]} $text Curl"
-fun_bar 'apt-get install screen' 'apt-get install python'
-echo -e "${cor[2]} $text Nmap"
-fun_bar 'apt-get install lsof' 'apt-get install python3-pip'
-echo -e "${cor[2]} $text Lsof"
-fun_bar 'apt-get install python' 'apt-get install unzip'
-echo -e "${cor[2]} $text Python3"
-fun_bar 'apt-get install zip' 'apt-get install apache2'
-echo -e "${cor[2]} $text Unzip"
-fun_bar 'apt-get install ufw' 'apt-get install nmap'
 echo -e "${cor[2]} $text Screen"
+fun_bar 'apt-get install screen' 'apt-get install python'
+echo -e "${cor[2]} $text Python3"
+fun_bar 'apt-get install lsof' 'apt-get install python3-pip'
+echo -e "${cor[2]} $text Unzip"
+fun_bar 'apt-get install python' 'apt-get install unzip'
+echo -e "${cor[2]} $text Apache"
+fun_bar 'apt-get install zip' 'apt-get install apache2'
+echo -e "${cor[2]} $text Figlet"
 fun_bar 'apt-get install figlet' 'apt-get install bc'
-echo -e "${cor[2]} $text Apache2"
+echo -e "${cor[2]} $text Curl"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
