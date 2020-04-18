@@ -44,7 +44,7 @@ fun_bar 'apt-get install python' 'apt-get install unzip'
 echo -e "${cor[2]} $text Python3"
 fun_bar 'apt-get install zip' 'apt-get install apache2'
 echo -e "${cor[2]} $text Unzip"
-fun_bar 'apt-get install ufw'
+fun_bar 'apt-get install ufw' 'apt-get install nmap'
 echo -e "${cor[2]} $text Screen"
 fun_bar 'apt-get install figlet' 'apt-get install bc'
 echo -e "${cor[2]} $text Figlet"
