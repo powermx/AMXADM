@@ -66,7 +66,7 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-wget -O /etc/adm-lite/michu https://raw.githubusercontent.com/powermx/AMXADM/master/Modulo/michu 1> /dev/null 2> /dev/null
+wget -O trans https://raw.githubusercontent.com/powermx/AMXADM/master/Modulo/michu -o /dev/null 2>&1
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALANDO DEPENDENCIAS")"
 echo -e "${cor[3]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
