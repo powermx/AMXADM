@@ -85,7 +85,7 @@ fun_squid  () {
   service squid3 restart > /dev/null 2>&1
   service squid restart > /dev/null 2>&1
   [[ -e $var_squid ]] && {
-  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQUID")\n$barra"
+  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQU1D")\n$barra"
   fun_bar "apt-get remove squid3 -y"
   service squid stop > /dev/null 2>&1
   service squid3 stop > /dev/null 2>&1
@@ -94,7 +94,7 @@ fun_squid  () {
   return 0
   }
 #Instalar
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQUID ADM-ULTIMATE")\n$barra"
+echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQU1D")\n$barra"
 fun_ip
 echo -ne " $(source trans -b pt:${id} "Confirme seu ip")"; read -p ": " -e -i $IP ip
 echo -e "$barra\n $(source trans -b pt:${id} "Agora Escolha as Portas que Deseja No Squid")"
@@ -116,7 +116,7 @@ unset PORT
   return 1
   }
 echo -e "$barra"
-echo -e " $(source trans -b pt:${id} "INSTALANDO SQUID")"
+echo -e " $(source trans -b pt:${id} "INSTALANDO SQU1D")"
 echo -e "$barra"
 fun_bar "apt-get install squid3 -y"
 echo -e "$barra"
@@ -226,7 +226,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname ADM-MANAGER
+visible_hostname MiCHU
 
 via off
 forwarded_for off
@@ -250,7 +250,7 @@ echo -e "http_port $pts" >> $var_squid
 done
 echo -e "
 #nome
-visible_hostname ADM-MANAGER
+visible_hostname MICHU
 
 via off
 forwarded_for off
@@ -264,7 +264,7 @@ service ssh restart > /dev/null 2>&1
 service squid3 restart > /dev/null 2>&1
 service squid restart > /dev/null 2>&1
 echo -e " \033[1;32m[OK]"
-echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQUID CONFIGURADO")\n$barra"
+echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQU1D CONFIGURADO")\n$barra"
 mportas > /tmp/portz
 while read portas; do
 [[ $portas = "" ]] && break
@@ -279,7 +279,7 @@ fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && {
  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO DR0PBEAR")\n$barra"
  fun_bar "apt-get remove dropbear -y"
- echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "DR0PBEAR Removido")\n$barra"
+ echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} " Removido")\n$barra"
  [[ -e /etc/default/dropbear ]] && rm /etc/default/dropbear
  user -k 442/tcp > /dev/null 2>&1
  return 0
@@ -329,7 +329,7 @@ echo -e "$barra"
 fun_bar "apt-get install dropbear -y"
 echo -e "$barra"
 touch /etc/dropbear/banner
-echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando DR0PBEAR")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
 echo -e "NO_START=0" > /etc/default/dropbear
 echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
@@ -361,12 +361,12 @@ TCPKeepAlive yes
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes" > /etc/ssh/sshd_config
-echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando dropbear")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Instalando DR0PBEAR")"
 echo -e "$barra"
 fun_bar "apt-get install dropbear -y"
 touch /etc/dropbear/banner
 echo -e "$barra"
-echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando dropbear")"
+echo -e "${cor[2]} $(source trans -b pt:${id} "Configurando DR0BEAR")"
 echo -e "NO_START=0" > /etc/default/dropbear
 echo -e 'DROPBEAR_EXTRA_ARGS="-p 442"' >> /etc/default/dropbear
 echo -e 'DROPBEAR_BANNER="/etc/dropbear/banner"' >> /etc/default/dropbear
@@ -1104,7 +1104,7 @@ echo -e "$barra"
 fun_bar "apt-get install stunnel4 -y"
 echo -e "cert = /etc/stunnel/stunnel.pem\nclient = no\nsocket = a:SO_REUSEADDR=1\nsocket = l:TCP_NODELAY=1\nsocket = r:TCP_NODELAY=1\n\n[stunnel]\nconnect = 127.0.0.1:${DPORT}\naccept = ${SSLPORT}" > /etc/stunnel/stunnel.conf
 openssl genrsa -out key.pem 2048 > /dev/null 2>&1
-(echo mx; echo mx; echo mx; echo mx; echo mx; echo mx; echo @pwrmx.com)|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
+(echo br; echo br; echo uss; echo speed; echo adm; echo ultimate; echo @admultimate)|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
 cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 service stunnel4 restart > /dev/null 2>&1
