@@ -9,7 +9,7 @@ done < $_dr
 unset n
 [[ ${txt[0]} = "" ]] && rm $_dr && exit 1
 else
-txt[0]="MICHU-ADM - Android Mexico"
+txt[0]="github.com/amxadm"
 txt[1]="EN LÍNEA:"
 txt[2]="EXPIRADOS:"
 txt[3]="SU SISTEMA:"
@@ -324,8 +324,8 @@ txt[311]="Descargar de la PlayStore:"
 txt[312]="VNC no Esta activo ¿Desea activar?"
 txt[313]="VNC esta activo ¿Desea deshabilitar?"
 txt[314]="VNC SERVER"
-txt[315]="¡SU VERSIÓN ESTA ACTUALIZADA!"
-txt[316]="¡ADM-ULTIMATE NECESITA ACTUALIZARSE!"
+txt[315]="--[ANDROID MEXICO TEAM]--"
+txt[316]="--[ANDROID MEXICO TEAM]--"
 txt[317]="APLICAR BLOQUEO TORRENT"
 txt[318]="Crear un nuevo archivo OpenVPN?"
 txt[319]="Crear archivo con autenticación (usuario y contraseña)?"
