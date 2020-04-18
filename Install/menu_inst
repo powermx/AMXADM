@@ -1243,7 +1243,7 @@ echo -e "${cor[2]} [8] > ${cor[3]}TCP OVER BYPASS $tcpbypass"
 echo -e "${cor[2]} [9] > ${cor[3]}TELEGRAN MANAGER BOT $telegran"
 echo -e "${cor[2]} [10] > ${cor[3]}WEBMIN $webminn"
 echo -e "${cor[2]} [11] > ${cor[3]}Anti-DDOS $ddos"
-echo -e "${cor[2]} [12] > ${cor[3]}v2ray"
+echo -e "${cor[2]} [12] > ${cor[3]}V2RAY"
 echo -e "$barra"
 echo -ne "\033[1;37m ${txt[338]}: "
 read optons
@@ -1281,6 +1281,7 @@ read -p " Enter";;
 11)
 antiddos
 read -p " Enter";;
+12)
 fun_v2ray
 read -p " Enter";;
 esac
