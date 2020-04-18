@@ -1157,6 +1157,18 @@ echo -e "$barra"
 echo -e "\033[1;32m ANTIDDOS INSTALADO CON EXITO.\033[1;37m"
 echo -e "$barra"
 }
+fun_v2ray () {
+echo -e "Se instalará la version Modificiada de V2ray por Android Mexico Team"
+echo -e "Este Mod no puede funcionar correctamente en conjunto con el original"
+echo -e "Continuar?"
+while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
+read -p "[S/N]: " yesno
+tput cuu1 && tput dl1
+done
+if [[ ${yesno} = @(s|S|y|Y) ]]; then
+curl -o multi-v2ray.sh -L https://git.io/JeSZL && bash multi-v2ray.sh && rm multi-v2ray.sh
+fi
+}
 
 #FUNCOES
 funcao_addcores () {
@@ -1231,6 +1243,7 @@ echo -e "${cor[2]} [8] > ${cor[3]}TCP OVER BYPASS $tcpbypass"
 echo -e "${cor[2]} [9] > ${cor[3]}TELEGRAN MANAGER BOT $telegran"
 echo -e "${cor[2]} [10] > ${cor[3]}WEBMIN $webminn"
 echo -e "${cor[2]} [11] > ${cor[3]}Anti-DDOS $ddos"
+echo -e "${cor[2]} [12] > ${cor[3]}v2ray"
 echo -e "$barra"
 echo -ne "\033[1;37m ${txt[338]}: "
 read optons
@@ -1267,6 +1280,8 @@ web_min
 read -p " Enter";;
 11)
 antiddos
+read -p " Enter";;
+fun_v2ray
 read -p " Enter";;
 esac
 
