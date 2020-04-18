@@ -85,7 +85,7 @@ fun_squid  () {
   service squid3 restart > /dev/null 2>&1
   service squid restart > /dev/null 2>&1
   [[ -e $var_squid ]] && {
-  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQUID")\n$barra"
+  echo -e "$barra\n\033[1;32m $(source trans -b es:${id} "REMOVIENDO SQU1D")\n$barra"
   fun_bar "apt-get remove squid3 -y"
   service squid stop > /dev/null 2>&1
   service squid3 stop > /dev/null 2>&1
@@ -94,7 +94,7 @@ fun_squid  () {
   return 0
   }
 #Instalar
-echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQUID ADM-ULTIMATE")\n$barra"
+echo -e "$barra\n\033[1;32m $(source trans -b pt:${id} "INSTALADOR SQU1D")\n$barra"
 fun_ip
 echo -ne " $(source trans -b pt:${id} "Confirme seu ip")"; read -p ": " -e -i $IP ip
 echo -e "$barra\n $(source trans -b pt:${id} "Agora Escolha as Portas que Deseja No Squid")"
@@ -116,7 +116,7 @@ unset PORT
   return 1
   }
 echo -e "$barra"
-echo -e " $(source trans -b pt:${id} "INSTALANDO SQUID")"
+echo -e " $(source trans -b pt:${id} "INSTALANDO SQU1D")"
 echo -e "$barra"
 fun_bar "apt-get install squid3 -y"
 echo -e "$barra"
@@ -264,7 +264,7 @@ service ssh restart > /dev/null 2>&1
 service squid3 restart > /dev/null 2>&1
 service squid restart > /dev/null 2>&1
 echo -e " \033[1;32m[OK]"
-echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQUID CONFIGURADO")\n$barra"
+echo -e "$barra\n ${cor[3]}$(source trans -b pt:${id} "SQU1D CONFIGURADO")\n$barra"
 mportas > /tmp/portz
 while read portas; do
 [[ $portas = "" ]] && break
