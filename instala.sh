@@ -44,7 +44,7 @@ fun_bar 'apt-get install python' 'apt-get install unzip'
 echo -e "${cor[2]} $text Python3"
 fun_bar 'apt-get install zip' 'apt-get install apache2'
 echo -e "${cor[2]} $text Unzip"
-fun_bar 'apt-get install ufw' 'apt-get install nmap'
+fun_bar 'apt-get install ufw'
 echo -e "${cor[2]} $text Screen"
 fun_bar 'apt-get install figlet' 'apt-get install bc'
 echo -e "${cor[2]} $text Figlet"
@@ -66,7 +66,7 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
-wget -O /etc/adm-lite/michu https://raw.githubusercontent.com/powermx/AMXADM/master/Modulo/michu
+wget -O /etc/adm-lite/michu https://raw.githubusercontent.com/powermx/AMXADM/master/Modulo/michu 1> /dev/null 2> /dev/null
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALANDO DEPENDENCIAS")"
 echo -e "${cor[3]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
