@@ -66,6 +66,7 @@ chmod +x /bin/adm
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
 wget -i $HOME/lista -o /dev/null
+wget -O /etc/adm-lite/michu https://raw.githubusercontent.com/powermx/AMXADM/master/Modulo/michu
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALANDO DEPENDENCIAS")"
 echo -e "${cor[3]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 cd /etc/adm-lite
@@ -135,9 +136,9 @@ esac
 echo -e "${cor[1]}════════════❖•ೋ° 🐱 °ೋ•❖════════════════"
 echo -e ""
 echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m MICHU🐱ADM "
-echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m ANDROID MEXICO"
+echo -e "${cor[5]} $(source trans -b pt:${id} "")\n\033[1;37m ANDROID MEXICO TEAM"
 echo -e "${cor[3]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
-echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
+echo -e "${cor[2]} $(source trans -b pt:${id} "INSTALANDO SISTEMA") ®"
 echo -e "${cor[5]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
 echo -e "${cor[3]} $(source trans -b pt:${id} "INICIANDO INSTALACION...")"
 echo -e "${cor[2]}⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸"
