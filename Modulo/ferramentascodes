@@ -31,7 +31,7 @@ return
 fi
 useradd -M -s /bin/false $1 -e $4
 (echo $2; echo $2) | passwd $1 2>/dev/null
-echo -e "${cor[5]} $1 Criado Com Sucesso!"
+echo -e "${cor[5]} $1 Criado Com FINALIZADO!"
 echo -e "Usuario: $1"
 echo -e "Senha: $2"
 echo -e "Loguins: $3"
@@ -108,7 +108,7 @@ echo "$user $pass $limit $data" >> /root/adm-backup
 echo -e "${cor[4]} $user\n $pass\n $limit\n $data"
  fi
 fi
-echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[1]}9 =================================== ${cor[0]}"
 done
 echo "admpro" >> $HOME/adm-backup
 echo -e "${cor[5]} ${txt[106]}"
@@ -168,7 +168,7 @@ if [ "$pid_badvpn" = "" ]; then
     echo -e "${cor[1]} =================================== ${cor[0]}"
     if [[ ! -e /bin/badvpn-udpgw ]]; then
     cd $HOME
-    wget https://raw.githubusercontent.com/NetFreeLaion/ADM-SCRIPT-BY-LAION/master/Install/badvpn-udpgw -o /dev/null
+    wget https://raw.githubusercontent.com/powermx/AMXADM/Install/badvpn-udpgw -o /dev/null
     mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
     chmod 777 /bin/badvpn-udpgw
     fi
