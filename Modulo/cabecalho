@@ -61,12 +61,12 @@ echo -e "${cor[5]} Unistaling Nmap${cor[0]}"
 fun_bar 'apt-get purge screen' 'apt-get purge nmap'
 echo -e "${cor[5]} Unistaling curl${cor[0]}"
 fun_bar 'apt-get purge figlet' 'apt-get purge zip'
-echo -e "${cor[5]} Unistaling Dropbear/Squid${cor[0]}"
+echo -e "${cor[5]} Unistaling /Squid${cor[0]}"
 fun_bar 'apt-get purge bc' 'apt-get purge lynx'
 echo -e "${cor[5]} Unistaling Apache2${cor[0]}"
 fun_bar 'apt-get purge curl' 'apt-get purge squid'
 echo -e "${cor[5]} Unistaling Libs${cor[0]}"
-fun_bar 'apt-get purge squid3' 'apt-get purge dropbear'
+fun_bar 'apt-get purge squid3' 'apt-get purge '
 echo -e "${cor[5]} Unistaling Scripts${cor[0]}"
 fun_bar 'apt-get purge apache2' 'apt-get purge php5 libapache2-mod-php5 php5-mcrypt'
 apt-get autoremove -y > /dev/null 2>&1
@@ -114,7 +114,7 @@ unset limiter_on
 [[ -e "$_modulos" ]] && {
  while read _module; do
  [[ "$_module" = "OPENSSH" ]] && OPENSSH="on"
- [[ "$_module" = "DROPBEAR" ]] && DROPBEAR="on"
+ [[ "$_module" = "" ]] && ="on"
  [[ "$_module" = "VERIFICAR" ]] && VERIFICAR="on"
  done < $_modulos
  } || {
@@ -537,9 +537,9 @@ done < $1
 mv -f $tmp_arq $1
 }
 
-open_dropbear () {
+open_ () {
 tmp_arq="/tmp/arq-tmp"
-arquivo="/etc/default/dropbear"
+arquivo="/etc/default/"
 echo -e "${cor[2]} |1| >${cor[5]} ${txt[279]}"
 echo -e "${cor[2]} |2| >${cor[5]} ${txt[280]}\033[1;37m"
 read -p " [ 1 / 2 ]: " escolhaas
@@ -547,15 +547,15 @@ if [ "$escolhaas" = "1" ]; then
 porta="$1"
 sed "s;-p $porta ;;g" $arquivo > $tmp_arq
 mv -f $tmp_arq $arquivo
-service dropbear restart > /dev/null 2>&1 &
+service  restart > /dev/null 2>&1 &
 sleep 2s
 echo -e "${cor[5]} ${txt[281]}"
 return
 elif [ "$escolhaas" = "2" ]; then
 read -p " Nova Porta: " newport
 porta="$newport"
-sed -i "s/443/$porta -p 443/g" $arquivo
-service dropbear restart > /dev/null 2>&1 &
+sed -i "s/442/$porta -p 442/g" $arquivo
+service  restart > /dev/null 2>&1 &
 sleep 2s
 echo -e "${cor[5]} ${txt[281]}"
 return
@@ -663,8 +663,8 @@ echo -e "\033[1;31m ${txt[283]} \033[1;32m${service_porta[$nun]}\033[1;31m : \03
 rm $portas_var
 rm $porta_var
 echo -e "${cor[1]} ⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸⫸ ${cor[0]}"
-if [ "${service_serv[$nun]}" = "dropbear" ]; then
-open_dropbear ${service_porta[$nun]}
+if [ "${service_serv[$nun]}" = "" ]; then
+open_ ${service_porta[$nun]}
 elif [ "${service_serv[$nun]}" = "sshd" ]; then
 open_ssh ${service_porta[$nun]}
 elif [ "${service_serv[$nun]}" = "squid3" ]; then
