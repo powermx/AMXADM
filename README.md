@@ -37,6 +37,6 @@ Integrantes de mantienen código, wiki y Correcciones :
 - Mk_dos
 - PowerMX
 
-> AndroidMexico ADM
+> AndroidMexico ADM | https://t.me/vpnmx
                 
 ----
