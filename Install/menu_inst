@@ -1166,7 +1166,19 @@ read -p "[S/N]: " yesno
 tput cuu1 && tput dl1
 done
 if [[ ${yesno} = @(s|S|y|Y) ]]; then
-curl -o multi-v2ray.sh -L https://git.io/JeSZL && bash multi-v2ray.sh && rm multi-v2ray.sh
+bash <(curl https://raw.githubusercontent.com/powermx/v2/main/v2power.sh)
+fi
+}
+
+fun_zivpn () {
+echo -e "Se instalará la version de ZIVPN UDP por Android Mexico Team"
+echo -e "Continuar?"
+while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
+read -p "[S/N]: " yesno
+tput cuu1 && tput dl1
+done
+if [[ ${yesno} = @(s|S|y|Y) ]]; then
+bash <(curl -fsSL https://raw.githubusercontent.com/powermx/zivpn/main/ziv2.sh)
 fi
 }
 
@@ -1244,6 +1256,7 @@ echo -e "${cor[2]} [9] > ${cor[3]}TELEGRAN MANAGER BOT $telegran"
 echo -e "${cor[2]} [10] > ${cor[3]}WEBMIN $webminn"
 echo -e "${cor[2]} [11] > ${cor[3]}Anti-DDOS $ddos"
 echo -e "${cor[2]} [12] > ${cor[3]}V2RAY"
+echo -e "${cor[2]} [13] > ${cor[3]}ZIVPN"
 echo -e "$barra"
 echo -ne "\033[1;37m ${txt[338]}: "
 read optons
@@ -1283,6 +1296,9 @@ antiddos
 read -p " Enter";;
 12)
 fun_v2ray
+read -p " Enter";;
+13)
+fun_zivpn
 read -p " Enter";;
 esac
 
