@@ -1,42 +1,41 @@
-  ![](https://github.com/powermx/AMXADM/raw/master/banneradm.png)
+# AMXADM Panel v2.0 Guide
 
-ADM Recodificado por el TEAM Android Mexico.
-<br>
-![](https://img.shields.io/github/v/release/powermx/badvpn)
-![](https://img.shields.io/github/repo-size/powermx/badvpn)
-![](https://img.shields.io/github/stars/powermx/badvpn.svg) 
-![](https://img.shields.io/github/forks/powermx/badvpn.svg) 
-![](https://img.shields.io/github/license/powermx/badvpn.svg)
+## Features
+- List of features included in AMXADM Panel v2.0.
 
-![](https://img.shields.io/badge/Ubuntu-14.04-orange)
-![](https://img.shields.io/badge/Ubuntu-14.10-orange)
-![](https://img.shields.io/badge/Ubuntu-16.04-orange)
-![](https://img.shields.io/badge/Ubuntu-16.10-orange)
-![](https://img.shields.io/badge/Ubuntu-18.04-orange)
-![](https://img.shields.io/badge/Ubuntu-18.10-orange)
-![](https://img.shields.io/badge/Ubuntu-19.04-orange)
-![](https://img.shields.io/badge/Ubuntu-19.10-orange)
-![](https://img.shields.io/badge/Debian-7-red)
-![](https://img.shields.io/badge/Debian-8-red)
-![](https://img.shields.io/badge/Debian-9-red)
-![](https://img.shields.io/badge/Debian-10-red)
+## Installation
+- Step-by-step guide to install AMXADM Panel v2.0.
 
-#### Instalacion
+## Menu Structure
+- Overview of the menu structure in AMXADM Panel.
 
-`wget https://raw.githubusercontent.com/powermx/AMXADM/master/instala.sh && bash instala.sh`
+## Themes
+- Information on available themes and customization options.
 
-### Android Mexico Team
+## Telegram Bot Setup
+- Instructions to set up the Telegram bot.
 
-Integrantes de mantienen código, wiki y Correcciones :
+## Monitoring
+- Guidelines for monitoring the AMXADM Panel performance.
 
-- Queen
-- GascaMX
-- Mike
-- Decorin
-- Alberto
-- Mk_dos
-- PowerMX
+## Security
+- Best practices to secure the AMXADM Panel.
 
-> AndroidMexico ADM | https://t.me/vpnmx
-                
-----
+## Troubleshooting
+- Common issues and their solutions.
+
+## Support
+- How to get support for AMXADM Panel.
+
+## Contributions
+- Guidelines for contributing to the AMXADM Panel.
+
+## License
+- Details about the licensing of AMXADM Panel.
+
+## Author Information
+- Information about the author and contributors.
+
+---
+
+This documentation is written by [SINNOMBRE22](https://github.com/SINNOMBRE22).
